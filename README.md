@@ -20,7 +20,7 @@ The Student Support Service application is built using Flask and SQLAlchemy to r
 ## Installation
 1. Clone the repository or download the source code.
 
-    git clone https://github.com/LoydNgei/Student_Support_Service
+    git clone [https://github.com/Student_Support_Service](https://github.com/srinivasyahoo/Student-Support-Case-Management-System-via-SQLAlchemy-ORM-and-Python-Flask)
 
 2. Make sure you have Python installed (version 3.6 or higher).
 
