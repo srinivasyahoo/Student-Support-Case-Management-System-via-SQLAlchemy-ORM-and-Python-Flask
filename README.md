@@ -1,6 +1,6 @@
 # Student Support Service
 
-A secure web application designed to manage student support requests relating to wellbeing, academic support, financial concerns, disability support, and accommodation issues[cite: 1].
+A secure web application designed to manage student support requests relating to wellbeing, academic support, financial concerns, disability support, and accommodation issues.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -8,12 +8,12 @@ A secure web application designed to manage student support requests relating to
 - [Installation](#installation)
 
 ## Overview
-The Student Support Service application is built using Flask and SQLAlchemy to replace manual email and spreadsheet workflows, ensuring better security, auditing, and case management[cite: 1]. It allows students to submit support requests and enables staff to manage those cases securely[cite: 1].
+The Student Support Service application is built using Flask and SQLAlchemy to replace manual email and spreadsheet workflows, ensuring better security, auditing, and case management. It allows students to submit support requests and enables staff to manage those cases securely.
 
 ## Features
 - View a list of all support requests and their current statuses
-- View individual support case details, including assigned support staff and internal notes[cite: 1]
-- Create new support requests across various categories (Academic, Financial, Wellbeing, Disability, Accommodation, and Other)[cite: 1]
+- View individual support case details, including assigned support staff and internal notes
+- Create new support requests across various categories (Academic, Financial, Wellbeing, Disability, Accommodation, and Other)
 - Edit and update case status, description, and staff notes
 - Delete support request records
 
