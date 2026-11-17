@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <span class="title">
+        <h1>{% block title %} Support Case #{{ support_request.id }} - {{ support_request.student_name }} {% endblock %}</h1>
+    </span>
+    <div class="content">
+        <div class="support-request" style="width: 100%; border: 1px solid #ccc; padding: 20px; background-color: #f9f9f9;">
+            <p><b>Request ID: #{{ support_request.id }}[cite: 1]</b></p>
+            <p><strong>Student ID:</strong> {{ support_request.student_id }}[cite: 1]</p>
+            <b>
+                <p class="name">Student Name: {{ support_request.student_name }}[cite: 1]</p>
+            </b>
+            <p><strong>Course:</strong> {{ support_request.course }}[cite: 1]</p>
+            <p><strong>Support Category:</strong> {{ support_request.support_category }}[cite: 1]</p>
+            <p><strong>Case Status:</strong> {{ support_request.case_status }}[cite: 1]</p>
+            <p><strong>Assigned Support:</strong> {{ support_request.assigned_support or 'Unassigned' }}[cite: 1]</p>
+            <p><strong>Submission Date:</strong> {{ support_request.submission_date }}[cite: 1]</p>
+            <p><strong>Last Updated Date:</strong> {{ support_request.last_updated_date }}[cite: 1]</p>
+            
+            <div class="description">
+                <h4>Support Request Description[cite: 1]</h4>
+                <p>{{ support_request.support_request_description }}</p>
+            </div>
+
+            <div class="staff-notes" style="background-color: #eef; padding: 10px; margin-top: 15px;">
+                <h4>Internal Staff Notes[cite: 1]</h4>
+                <p>{{ support_request.internal_staff_notes or 'No internal notes recorded.' }}</p>
+            </div>
+
+            <br>
+            <a href="{{ url_for('edit', request_id=support_request.id) }}">Edit Request</a> | 
+            <a href="{{ url_for('index') }}">Back to All Requests</a>
+        </div>
+    </div>
+{% endblock %}

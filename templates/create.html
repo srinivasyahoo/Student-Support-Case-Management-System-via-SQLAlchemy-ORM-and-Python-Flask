@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="width: 100%">{% block title %} Create a Support Request {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="student_id">Student ID</label><br>
+            <input type="text" name="student_id" placeholder="Unique Identifier" required>
+        </p>
+
+        <p>
+            <label for="student_name">Student Name</label><br>
+            <input type="text" name="student_name" placeholder="Full student name" required>
+        </p>
+
+        <p>
+            <label for="course">Course</label><br>
+            <input type="text" name="course" placeholder="Program of study" required>
+        </p>
+
+        <p>
+            <label for="support_category">Support Category</label><br>
+            <select name="support_category" required>
+                <option value="">Select category...</option>
+                <option value="Academic">Academic</option>
+                <option value="Financial">Financial</option>
+                <option value="Wellbeing">Wellbeing</option>
+                <option value="Disability">Disability</option>
+                <option value="Accommodation">Accommodation</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="support_request_description">Support Request Description</label>
+            <br>
+            <textarea name="support_request_description"
+                      placeholder="Details of the support request"
+                      rows="8"
+                      cols="60"
+                      required></textarea>
+        </p>
+
+        <p>
+            <label for="case_status">Case Status</label><br>
+            <select name="case_status">
+                <option value="New" selected>New</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Awaiting Student">Awaiting Student</option>
+                <option value="Closed">Closed</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="internal_staff_notes">Internal Staff Notes</label>
+            <br>
+            <textarea name="internal_staff_notes"
+                      placeholder="Staff-only notes relating to the case"
+                      rows="5"
+                      cols="60"></textarea>
+        </p>
+
+        <p>
+            <label for="assigned_support">Assigned Support</label><br>
+            <input type="text" name="assigned_support" placeholder="Staff member responsible">
+        </p>
+
+        <p>
+            <button type="submit">Submit Request</button>
+        </p>
+    </form>
+{% endblock %}
