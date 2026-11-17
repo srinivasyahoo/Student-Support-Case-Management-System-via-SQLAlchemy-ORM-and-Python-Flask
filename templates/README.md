@@ -1,6 +1,1 @@
-In this project, you’ll build a small student management system that demonstrates how to use the Flask-SQLAlchemy extension.
-You’ll use it with Flask to perform basic tasks, such as connecting to a database server, creating a table,
-adding data to your table, retrieving it, and updating and deleting items from your database. 
-You’ll use SQLAlchemy with SQLite, although you can use it with other database engines too, such as PostgreSQL and MySQL. 
-SQLite works well with Python because the Python standard library provides the sqlite3 module,
-which is used by SQLAlchemy behind the scenes to interact with SQLite databases without having to install anything.
+In this project, I built a small student management system that demonstrated how to use the Flask-SQLAlchemy extension. I used it with Flask to perform basic tasks, such as connecting to a database server, creating a table, adding data to my table, retrieving it, and updating and deleting items from my database. I used SQLAlchemy with SQLite, although it could also be used with other database engines, such as PostgreSQL and MySQL. SQLite worked well with Python because the Python standard library provided the sqlite3 module, which was used by SQLAlchemy behind the scenes to interact with SQLite databases without having to install anything.
